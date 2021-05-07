@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CSharpSlotSwapper/bin/Debug/netcoreapp2.0
+/CSharpSlotSwapper/bin/Release/netcoreapp2.0
+/CSharpSlotSwapper/obj
+*.cache
+/OurWebApp.Web/obj/Release/netcoreapp2.0/PubTmp/Out/de/Microsoft.Data.OData.resources.dll
+/OurWebApp.Web/obj/Release/netcoreapp2.0/PubTmp/Out/de/System.Spatial.resources.dll
+/OurWebApp.Web/obj/Release/netcoreapp2.0/PubTmp/Out/de/Microsoft.Data.Edm.resources.dll
+/OurWebApp.KeyVaultHelper/bin/Debug/OurWebApp.KeyVaultHelper.1.0.0.nupkg
+/OurWebApp.Web/obj/Release/netcoreapp2.0/PubTmp/Out/System.Text.Encodings.Web.dll
+**/.vs/*
+/demos.zip
+**/obj/*
+**/obj
+obj
+/OurWebApp.Dates/bin
+/OurWebApp.KeyVaultHelper/bin
+/OurWebApp.Tests/bin/Debug/netcoreapp2.0
+/OurWebApp.Web/bin
+/OurWebApp.Tests/TestResults/
+/OurWebApp.Tests/coverage.cobertura.xml
+/OurWebApp.Tests/bin/Debug/netcoreapp3.1
+/OurWebApp.Web/Properties/PublishProfiles
+/OurWebApp.Web/Properties/ServiceDependencies/zaptesting-STAGING - Web Deploy/profile.arm.json
