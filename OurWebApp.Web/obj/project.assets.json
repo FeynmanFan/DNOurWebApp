@@ -1,11 +1,35 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "OurWebApp.Data/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/OurWebApp.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OurWebApp.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OurWebApp.Data/0.1.0": {
+      "sha512": "iwqW0wo92VXxLHP0Z8mCNyEyOEU2GiTM+qgbOh7YyVMGe7xWeGnLkxu8+WB6PtYKxv0VojiIhKMaPbUi7d2/fw==",
+      "type": "package",
+      "path": "ourwebapp.data/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netcoreapp3.1/OurWebApp.Data.dll",
+        "ourwebapp.data.0.1.0.nupkg.sha512",
+        "ourwebapp.data.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "OurWebApp.Data >= 0.1.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\chris\\.nuget\\packages\\": {},
@@ -51,6 +75,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "OurWebApp.Data": {
+            "target": "Package",
+            "version": "[0.1.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

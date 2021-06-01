@@ -1,0 +1,8 @@
+﻿@page
+@model OurWebApp.Web.Pages.MenuModel
+@{
+    @foreach (var dessert in Model.Desserts) 
+    {
+        @dessert.Title
+    }
+}
