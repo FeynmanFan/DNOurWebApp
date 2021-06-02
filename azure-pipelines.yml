@@ -12,13 +12,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: DownloadSecureFile@1
-  inputs:
-    secureFile: 'nuget.config'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: '**/Globomantics.Data.sln'
 - task: CmdLine@2
   inputs:
-    script: 'dotnet nuget push /OurWebApp.Data/bin/debug/*.nupkg --source github --api-key %GITHUBAPIKEY%'
+    script: 'dotnet nuget push /OurWebApp.Data/bin/debug/*.nupkg --source https://nuget.pkg.github.com/FeynmanFan/index.json --api-key %GITHUBAPIKEY%'
