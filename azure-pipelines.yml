@@ -18,4 +18,4 @@ steps:
     projects: '**/Globomantics.Data.sln'
 - task: CmdLine@2
   inputs:
-    script: 'dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://nuget.pkg.github.com/FeynmanFan/index.json --api-key %GITHUBAPIKEY%'
+    script: 'dotnet nuget push $(Build.ArtifactStagingDirectory)/OurWebApp.Data/bin/debug/*.nupkg --source https://nuget.pkg.github.com/FeynmanFan/index.json --api-key %GITHUBAPIKEY%'
